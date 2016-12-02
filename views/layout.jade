@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    script(type="text/javascript", src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+  body
+    #wrap
+      .container
+        h1.page-header= appTitle
+        p.lead Welcome to example from Express.js
+        block page
+        block header
+          div
+        block alert
+          div.alert.alert-warning.hidden
+        .content
+          block content
+    block footer
+      footer
+        .container
+          p
+            | Copyright &copy; 2016 | Issues? Submit to
+            a(href="https://github.com/gpcweb/nodejs-pai/issues") GitHub
+            | .

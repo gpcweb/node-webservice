@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h2 Post an Image
+  div.col-md-4.col-md-offset-4
+    form(method="POST", role="form", action="/users", enctype="multipart/form-data")
+      div.form-group
+        label.text-left(for="username") Username
+        input.form-control(type="text", name="username", placeholder="")
+      div.form-group
+        label.text-left(for="file") Image
+        input.form-control(type="file", name="image")
+      p
+        button.btn.btn-primary(type="submit") Save
